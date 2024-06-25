@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.top {
+  padding: 20px 2%;
+  background: #282828;
+}
+.top .logo_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.top img {
+  border-radius: 50%;
+}
+.top .info .profission {
+  font-size: 1.75rem;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.top .info .name {
+  font-size: 1.375rem;
+  letter-spacing: 0.8px;
+  color: #c5e1a5;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.top .info .description {
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.top .info .btn {
+  display: flex;
+  gap: 10px;
+}
+.top .info .btn .btn_email, .top .info .btn .btn_contact {
+  color: #a5d6a7;
+  text-align: center;
+  background: transparent;
+  border: 2px solid #a5d6a7;
+  border-radius: 5px;
+  padding: 6px 20px;
+  min-width: 120px;
+  transition: background 0.3s, color 0.3s;
+}
+.top .info .btn .btn_email:hover, .top .info .btn .btn_contact:hover {
+  background: #a5d6a7;
+  color: #1a1a1a;
+}
+
+.content-main {
+  padding: 15px 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.about .about-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #7c7c7c;
+  letter-spacing: 0.8px;
+  text-align: justify;
+}
+
+.social a {
+  color: #a5d6a7;
+  margin-right: 10px;
+}
+.social a:hover {
+  color: #c5e1a5;
+}
+.social i {
+  font-size: 1.125rem;
+}
+.social [aria-label] {
+  position: relative;
+}
+.social [aria-label]::after {
+  content: attr(aria-label);
+  display: none;
+  position: absolute;
+  top: 98%;
+  left: 0px;
+  z-index: 5000;
+  padding: 5px 8px;
+  font-size: 0.8rem;
+  color: #1a1a1a;
+  background: #c5e1a5;
+  border-radius: 5px;
+}
+.social [aria-label]:hover::after {
+  display: block;
+}
+
+.btn_cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 30px;
+  color: #a5d6a7;
+  background: transparent;
+  border: 2px solid #a5d6a7;
+  border-radius: 5px;
+  padding: 6px 20px;
+  min-width: 120px;
+  max-width: 180px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn_cv:hover {
+  background: #a5d6a7;
+  color: #1a1a1a;
+  margin-top: 30px;
+}
+
+.skills .skill {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills .skill .skill_text {
+  font-size: 0.813rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #7c7c7c;
+}
+.skills .skill i {
+  font-size: 1.5rem;
+  color: #a5d6a7;
+  background: #3a3a3a;
+  max-width: 100px;
+  min-width: 100px;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills .skill p {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.projects {
+  padding: 20px 1%;
+  grid-column: 1/-1;
+  border-radius: 10px;
+  background: #282828;
+  border-radius: 10px;
+}
+.projects h2 {
+  text-align: center;
+}
+.projects .projects_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+.projects .projects_flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.projects img {
+  width: 250px;
+  border-radius: 4px;
+  transition: transform 0.4s;
+}
+.projects img:hover {
+  transform: scale(1.08);
+}
+.projects h3 {
+  text-align: center;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  background: #1a1a1a;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 150px;
+}
+
+img {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  color: #a5d6a7;
+}
+
+p {
+  color: #e0e0e0;
+}
+
+svg {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+}
+
+.about, .skills {
+  background: #282828;
+  padding: 20px 2%;
+  border-radius: 10px;
+}
+
+.about h2, .skills h2, .projects h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  color: #c5e1a5;
+}
+
+.about p, .skills p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=style.css.map */

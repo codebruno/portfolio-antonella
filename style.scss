@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    list-style: none;
+    text-decoration: none;
+    border: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+@import "portials/colors";
+@import "portials/user";
+@import "portials/about";
+@import "portials/skills";
+@import "portials/projects";
+
+html{
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    background: $bg-primary;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 150px;
+}
+
+img{
+    width: 100%
+}
+
+h1, h2, h3{
+    color: $green-light;
+}
+
+p{
+    color: $white;
+}
+
+svg{
+    width: 100%;
+}
+
+a{
+    cursor: pointer;
+}
+
+.about, .skills{
+    background: $bg-secondary;
+    padding: 20px 2%;
+    border-radius: 10px;
+}
+
+.about h2, .skills h2, .projects h2 {
+    font-size: $size-24;
+    letter-spacing: 0.5px;
+
+    margin-bottom: 20px;
+    color: $light-green;
+}
+
+.about p, .skills p{
+    font-size: $size-16;
+
+    margin-bottom: 20px;
+}

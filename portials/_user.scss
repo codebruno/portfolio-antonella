@@ -1,0 +1,71 @@
+.top{
+    padding: 20px 2%;
+    background: $bg-secondary;
+    
+    .logo_info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    img{
+        border-radius: 50%;
+    }
+
+    .info{
+        .profission{
+            font-size: $size-28;
+            letter-spacing: 0.8px;
+    
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+    
+        .name{
+            font-size: $size-22;
+            letter-spacing: 0.8px;
+
+            color: $light-green;
+    
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+    
+        .description{
+            font-size: $size-16;
+            letter-spacing: 0.8px;
+    
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .btn{
+            display: flex;
+            gap: 10px;
+
+            .btn_email, .btn_contact{
+                color: $green-light;
+                border: 2px solid $btn-primary;
+                
+                text-align: center;
+
+                background: transparent;
+            
+                border-radius: 5px;
+
+                padding: 6px 20px;
+                min-width: 120px;
+
+                transition: background 0.3s, color 0.3s;
+        
+            }
+            // HOVER------------------------------
+            .btn_email:hover, .btn_contact:hover{
+                background: $btn-bg;
+                color: $btn-font-color;
+            }
+        }
+    }
+}
+

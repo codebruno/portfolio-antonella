@@ -1,0 +1,38 @@
+.skills{
+   
+    .skill{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap:10px;
+
+        .skill_text{
+            font-size: $size-13;
+            letter-spacing: 2px;
+            font-weight: 500;
+            color: $dark;
+        }
+        
+        i{
+            font-size: $size-24;
+    
+            color: $green-light;
+            background: $bg-terciary;
+
+            max-width: 100px;
+            min-width: 100px;
+
+            padding: 20px;
+            border-radius: 5px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p{
+            margin-top: 5px;
+            text-align: center;
+        }
+    }
+}
